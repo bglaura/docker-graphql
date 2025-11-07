@@ -26,9 +26,11 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t ljbg/docker-grphql:0.0.2 .
+        docker build -t ljbg/docker-grphql:latest .
     - name: Push docker image
       run: |
         docker push ljbg/docker-grphql:0.0.2
+        docker push ljbg/docker-grphql:latest
 
       
 #    - name: Build the Docker image
